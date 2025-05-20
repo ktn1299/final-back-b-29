@@ -6,7 +6,7 @@
 
 
 
-const express = require("express");
+import express from 'express';
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
