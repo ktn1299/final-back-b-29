@@ -5,11 +5,10 @@
 
 
 
-
 import express from 'express';
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-const cors = require("cors");
+import mongoose from 'mongoose'; // Changed to import
+import dotenv from 'dotenv';
+import cors from 'cors';
 
 const app = express();
 dotenv.config();
@@ -38,5 +37,4 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-  app.listen(3000, () => console.log('Server running on port 3000'));
 });
